@@ -180,7 +180,7 @@ function initMap() {
   }
 
 async function covid(){
-  const response=await fetch('https://corona.lmao.ninja/countries');
+  const response=await fetch('https://corona.lmao.ninja/v2/countries');
   const data= await response.json();
   
   displayCountry(data);
