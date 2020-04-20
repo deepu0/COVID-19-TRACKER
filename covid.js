@@ -106,7 +106,7 @@ function initMap() {
   async function viewCases(map) {
     clearMarkers.forEach(i => i.setMap(null))
     let inputData;
-    await fetch('https://corona.lmao.ninja/countries')
+    await fetch('https://corona.lmao.ninja/v2/countries')
       .then(res => res.json())
       .then(data => {
         inputData = data;
